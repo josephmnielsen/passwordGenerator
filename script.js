@@ -13,19 +13,19 @@ document.getElementById('generate').addEventListener('click', () => {
   let symbols = '!@#$%&*'
   let generatedUsername = ''
 
-  if (hasLowercase === 'y') {
+  if (hasLowercase === 'y' || hasLowercase === 'Y') {
     charSet += lowercase
   }
 
-  if (hasUppercase === 'y') {
+  if (hasUppercase === 'y' || hasUppercase === 'Y') {
     charSet += uppercase
   }
 
-  if (hasNumbers === 'y') {
+  if (hasNumbers === 'y' || hasNumbers === 'Y') {
     charSet += numbers
   }
 
-  if (hasSymbols === 'y') {
+  if (hasSymbols === 'y' || hasSymbols === 'Y') {
     charSet += symbols
   }
 
